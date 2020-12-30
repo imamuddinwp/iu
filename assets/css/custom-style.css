@@ -1,0 +1,29 @@
+﻿
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: thomba;
+    font-size:16px;
+    line-height:30px;
+}
+.pad-top {
+    padding-top:80px;
+    
+}
+h1 {
+    font-size:100px;
+    padding-bottom:20px;
+    font-weight:900;
+}
+h3 {
+    text-transform:uppercase;
+    font-size:40px;
+     padding-bottom:40px;
+}
+h4 {
+    padding-top:20px;
+    color:#000;
+    font-size:40px;
+}

@@ -451,6 +451,7 @@ div#respond{
 .nav a:hover {
   background-color: #e5e502;
   color: #16191f;
+  border-radius: 0 25px 0 25px;
 }
 div.mobile-touch {
   width: 100%;

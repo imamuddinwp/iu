@@ -1,12 +1,22 @@
 /************************************************************************
-// General
+     _ +------------------------------------------------------------+_
+    /o)|     	Project    ::   Imam Uddin | Front-End Developer	|(o\
+   / / |     	Author     ::   Imam Uddin       		          		| \ \
+  ( (_ |  _   Author URL ::   https://github.com/imamuddinwp   _| _) )
+ ((\ \)+-/o)-------------------------------------------------(o\-+(/ /))
+ (\\\ \_/ /                                     	            \ \_/ ///)
+  \      /                 	 __                    		         \      /
+   \____/                 	|  |                                \____/
+   |    | ++++++++++++++++++++++++++++++++++++++++++++++++++++++|    |
 *************************************************************************/
 ::selection {
   background-color: #383809;
   color: #ffff91;
 }
 body{
-	background-position:center top!important;
+  background: linear-gradient(-45deg, #ee76523f, #e73c7e2c, #23a5d50c, #23d5ab);
+	background-size: 800% 800%;
+	animation: gradient 56s ease infinite;
 }
 ::-moz-selection {
   background-color: #383809;
@@ -29,7 +39,7 @@ img {
   color: #e5e502;
 }
 .loader {
-  background-color: #292929;
+  background-color: #000000;
   width: 100%;
   height: 110%;
   position: fixed;
@@ -38,11 +48,12 @@ img {
   margin-top: -70px;
 }
 .loader img {
+  margin: 0;
   position: absolute;
-  left: 50%;
   top: 50%;
-  margin-left: -20px;
-  margin-top: -42px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 a:focus {
   outline: none;
@@ -124,7 +135,9 @@ object {
 }
 .homepage .circle {
   position: relative;
+  animation: pulse_ani_circle 5s linear infinite;
 }
+
 .homepage .circle > a {
   font-size: 8em;
   position: absolute;
@@ -164,10 +177,11 @@ object {
 }
 .circle h1 , h2{
   color:  #F0F8FF;
-  /* font-size: 2em; */
+  font-size: 2.7em;
   font-weight: 1200;
   font-family: 'Exo', sans-serif;
 }
+
 .homepage .h-card {
   text-align: center;
 }
@@ -260,6 +274,7 @@ span.footer_credits a {
     overflow: hidden;
     position: relative;
     border: 1px solid;
+    animation: pulse_ani_social 5s linear infinite;
 }
   .social_media a i {
 	position: relative;
@@ -819,6 +834,25 @@ div.mobile-touch .fa {
 {
 	color: #E6E6FA;
 }
+
+/**************
+//Google Map
+***********/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:40%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+	padding-top:2%;
+	padding-bottom:3%;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 /************************************************************************
 // Isotope
 *************************************************************************/
@@ -961,6 +995,7 @@ div.mobile-touch .fa {
     height: auto;
     width: 100%;
   }
+
   .nav {
     display: none;
     float: left;
@@ -980,4 +1015,44 @@ div.mobile-touch .fa {
   .bookmark {
     text-align: left!important;
   }
+}
+@keyframes pulse_ani_circle {
+  0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.432), 0 0 0 0 rgba(255, 255, 255, 0.534);
+  }
+  40% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.164), 0 0 0 0 rgba(255, 255, 255, 0.137);
+  }
+  80% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.123), 0 0 0 0 rgba(255, 255, 255, 0.123);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.253), 0 0 0 0 rgba(255, 255, 255, 0.473);
+  }
+}
+@keyframes pulse_ani_social {
+  0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.226), 0 0 0 0 rgba(255, 255, 255, 0.205);
+  }
+  40% {
+      box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.082), 0 0 0 0 rgba(255, 255, 255, 0.068);
+  }
+  80% {
+      box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.281), 0 0 0 0 rgba(255, 255, 255, 0.308);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.253), 0 0 0 0 rgba(255, 255, 255, 0.192);
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

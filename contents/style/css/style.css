@@ -9,18 +9,33 @@
    \____/                 	|  |                                \____/
    |    | ++++++++++++++++++++++++++++++++++++++++++++++++++++++|    |
 *************************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+html {
+    font-size: 62.5%;
+}
+
 ::selection {
   background-color: #383809;
   color: #ffff91;
 }
-body{
-  background: linear-gradient(-45deg, #ee76523f, #e73c7e2c, #23a5d50c, #23d5ab);
-	background-size: 800% 800%;
-	animation: gradient 56s ease infinite;
-}
+
 ::-moz-selection {
   background-color: #383809;
   color: #ffff91;
+}
+body{ 
+  font-size: 1.4rem; 
+  font-family: 'Rajdhani', sans-serif;
+  animation: bg_animation 56s ease infinite;
 }
 a {
   -webkit-transition: color .15s, background .15s;
@@ -64,16 +79,7 @@ ul {
 ul li {
   list-style: none;
 }
-.acf-map {
-  width: 100%;
-  height: 400px;
-  border: #ccc solid 1px;
-  margin: 20px 0;
-  margin-bottom: 3em;
-}
-.acf-map img{
-max-width:none;
-}
+
 video {
   max-width: 100%;
   height: auto;
@@ -162,8 +168,10 @@ object {
   border-radius: 50% 50%;
   margin-bottom: 40px;
   overflow: hidden;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .circle a {
   -webkit-transition: all 1s;
@@ -172,14 +180,29 @@ object {
 .circle:hover {
   background-color: #ff0000c9;
 }
+.circle i {  
+  -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
+}
+.circle i:hover{
+  
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
 .circle:hover a {
   color: #F0F8FF;
 }
-.circle h1 , h2{
+.circle h1 {
   color:  #F0F8FF;
   font-size: 2.7em;
-  font-weight: 1200;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Limelight', cursive;
+}
+.circle h2{
+  color:  #F0F8FF;
+  font-size: 2.7em;
+  font-family: 'Felipa', cursive;  
 }
 
 .homepage .h-card {
@@ -190,10 +213,7 @@ object {
   height: 50%;
   position: relative;
 }
-.homepage .h-card .p-name,
-.homepage .h-card .p-job-title {
-  text-transform: uppercase;
-}
+
 .homepage .h-card .p-name {
  position: absolute;
  bottom: 0;
@@ -203,12 +223,15 @@ object {
  font-weight: 500;
 }
 .homepage .h-card .p-job-title {
-  font-size: 1.1em;
-  margin-top: 5px;
+  font-size: 1.9em;
+  margin-top: -0.6em;
   font-weight: 500;
 }
 .homepage .h-card:hover {
   background-color: #ff0000c9;
+}
+hr {
+	border-top: 1px dashed #F1F8E9;
 }
 .tooltip-mobile {
   text-align: center;
@@ -1045,7 +1068,7 @@ div.mobile-touch .fa {
   }
 }
 
-@keyframes gradient {
+@keyframes bg_animation {
 	0% {
 		background-position: 0% 50%;
 	}

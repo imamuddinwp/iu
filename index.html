@@ -57,6 +57,38 @@ background-attachment: fixed;
 </head>
 <body class="home page-template page-template-template-homepage page-template-template-homepage-php page page-id-1806 custom-background">
 
+
+
+
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+	  window.fbAsyncInit = function() {
+		FB.init({
+		  xfbml            : true,
+		  version          : 'v9.0'
+		});
+	  };
+
+	  (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat"
+	  attribution="setup_tool"
+	  page_id="109530127628507"
+theme_color="#0A7CFF"
+logged_in_greeting="Hey there; it's me! Imam Uddin, imamuddinwp. How can I help you today? "
+logged_out_greeting="Hey there; it's me! Imam Uddin, imamuddinwp. How can I help you today? ">
+	</div>
+
+
+	
  <div class="loader">
 	<img src="contents/style/img/loader.gif" alt="loader Front-End Developer | SEO Expert" title=" Loader gif image of Front-End Developer | SEO Expert." />
 </div>
@@ -110,19 +142,7 @@ background-attachment: fixed;
 						<a href="portfolio.html" title="Portfolio" class="u-url">Portfolio</a>
 					</div> <!-- end tooltip-mobile -->					
 				</div> <!-- end circle -->
-				
-				<div class="circle">
-					<a href="contact.html" title="Contact" class="u-url" title="Contact" data-toggle="tooltip" data-original-title="contact"><i class="fas fa-map-marked-alt"></i></a>
-					
-					<div class="tooltip-mobile">
-						<a href="contact.html" title="Contact" class="u-url">Contact</a>
-					</div> <!-- end tooltip-mobile -->
-				</div> <!-- end circle -->
-				
-			</div> <!-- end col-sm-6 -->
-
-			<div class="col-sm-6 col-md-3">
-			
+							
 				<div class="circle">
 
 					<a href="blog.html" title="Blog" class="u-url" title="Blog" data-toggle="tooltip" data-original-title="blog"><i class="fas fa-rss-square"></i></i></a>
@@ -131,6 +151,19 @@ background-attachment: fixed;
 						<a href="blog.html" title="Blog" class="u-url">Blog</a>
 					</div> <!-- end tooltip-mobile -->
 
+				</div> <!-- end circle -->
+				
+				
+			</div> <!-- end col-sm-6 -->
+
+			<div class="col-sm-6 col-md-3">
+
+				<div class="circle">
+					<a href="contact.html" title="Contact" class="u-url" title="Contact" data-toggle="tooltip" data-original-title="contact"><i class="fas fa-map-marked-alt"></i></a>
+					
+					<div class="tooltip-mobile">
+						<a href="contact.html" title="Contact" class="u-url">Contact</a>
+					</div> <!-- end tooltip-mobile -->
 				</div> <!-- end circle -->
 				
 					<div class="circle">

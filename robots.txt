@@ -1,4 +1,3 @@
 User-Agent: *
 Disallow: 
-
 Sitemap: https://evertree.co.uk/sitemap_index.xml

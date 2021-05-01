@@ -1,3 +1,3 @@
 User-Agent: *
 Disallow: 
-Sitemap: https://evertree.co.uk/sitemap_index.xml
+Sitemap: https://imamuddinwp.github.io/iu/sitemap.xml
